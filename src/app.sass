@@ -1,0 +1,53 @@
+html, body, #app
+  width: 100vw
+  height: 100vh
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+#app
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #242424
+  flex-direction: column
+  gap: 5px
+
+.game
+  $size: 50px
+  display: grid
+  grid-template-columns: $size $size $size
+  // gap: 5px
+  background-color: #18ad6d
+  padding: 10px
+  // border-radius: 10px
+
+  .item
+    width: $size
+    height: $size
+    border: 1px solid #ebebeb
+    // border-radius: 10px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 30px
+
+    &::before
+      font-family: 'icomoon' !important
+      speak: never
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+
+    &[data-val="1"]::before
+      content: "\ea0f"
+
+    &[data-val="2"]::before
+      content: "\ea56"
