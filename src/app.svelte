@@ -1,9 +1,8 @@
 <script lang="ts">
   const map = new Uint8Array(9);
 
-
   function click(id: number) {
-    
+
   }
 </script>
 
